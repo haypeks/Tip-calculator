@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+:root {
+  --vivid: hsl(35, 100%, 50%);
+  --dark-liver: hsl(0, 0%, 31%);
+  --light-gray: hsl(60, 2%, 83%);
+  --very-light-gray: hsl(60, 6%, 95%);
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -8,17 +15,10 @@
 }
 
 /* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin-block-end: 0;
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -33,10 +33,9 @@ html:focus-within {
 }
 
 /* Set core body defaults */
+html,
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  height: 100%;
 }
 
 /* A elements that don't have a class get default styles */
@@ -49,14 +48,6 @@ img,
 picture {
   max-width: 100%;
   display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -75,10 +66,183 @@ select {
   }
 }
 
-html {
+/*.............GENERAL STYLING.................. */
+
+body {
+  background-color: var(--light-gray);
   font-family: "Space Mono", monospace;
 }
 
+.calculator-bg {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
 h1 {
-  font-size: 80px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  margin: 3rem;
+}
+
+.input {
+  background-color: var(--very-light-gray);
+  border: none;
+  height: 2rem;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  text-align: right;
+  border-radius: 0.3rem;
+  font-size: 25px;
+}
+
+.dollar-icon {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: -2.3rem;
+  left: 1rem;
+}
+
+.person-icon {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  left: 1rem;
+  top: -2.2rem;
+}
+
+/*
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+  width: min(var(--max-width), 100% - (var(--padding))); 
+  margin-inline: auto;
+}
+
+*/
+
+.display-card {
+  background-color: var(--dark-liver);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  display: grid;
+}
+
+label {
+  display: block;
+  font-weight: 400;
+  padding: 0.2rem 0;
+}
+
+.tip-card {
+  margin: 2rem 0;
+}
+.tip-custom {
+  width: 100%;
+  text-align: center;
+  border: none;
+  background-color: var(--very-light-gray);
+  padding: 0.5em 0;
+  border-radius: 0.3em;
+}
+
+.tip {
+  display: grid;
+  text-align: center;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tip-percentage {
+  background-color: var(--dark-liver);
+  color: white;
+  border-radius: 0.3rem;
+  text-align: center;
+  padding: 0.5em 1em;
+}
+
+.tip-amount {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 1em 0;
+}
+
+.tip-per-person {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+button {
+  background-color: var(--vivid);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 4rem;
+  border: none;
+  width: 100%;
+}
+
+.tip-value {
+  font-weight: 500;
+  font-size: xx-large;
+  color: white;
+}
+
+.tip-amount p {
+  text-align: start;
+}
+
+.tip-per-person p {
+  text-align: start;
+}
+
+@media (min-width: 45em) {
+  .calculator-bg {
+    position: absolute;
+    margin: 0 auto;
+    top: 50;
+  }
+
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .calculator-bg {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .even-column {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+  .input-column {
+    width: 50%;
+  }
+
+  .display-card {
+    width: 50%;
+  }
+
+  .tip-per-person {
+    padding: 1em 0;
+  }
+
+  button {
+    align-self: flex-end;
+  }
+
+  h1 {
+    display: block;
+    margin-top: 6rem;
+    margin-bottom: -10rem;
+    font-size: xx-large;
+  }
 }

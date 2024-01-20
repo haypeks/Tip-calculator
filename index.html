@@ -5,10 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="" />
 
     <title>Tip Calculator</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <h1>Tip Calculator</h1>
+    <main id="container">
+      <div class="calculator-bg even-column">
+        <div class="input-column">
+          <!--................................-->
+          <div>
+            <label class="bill">Bill</label>
+            <div>
+              <input class="input" type="" value="" />
+              <img class="dollar-icon" src="./image/dollar-icon.png" alt="" />
+            </div>
+          </div>
+          <!--................................-->
+          <div>
+            <label>How was your service?</label>
+            <select>
+              <option value="">Choose an Option</option>
+              <option value="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="terrible">Terrible</option>
+            </select>
+          </div>
+          <!--................................-->
+          <div class="tip-card">
+            <p>Select Tip %</p>
+            <div class="tip">
+              <div class="tip-percentage">5%</div>
+              <div class="tip-percentage">10%</div>
+              <div class="tip-percentage">15%</div>
+              <div class="tip-percentage">25%</div>
+              <div class="tip-percentage">50%</div>
+              <div>
+                <input class="tip-custom" type="text" placeholder="Custom" />
+              </div>
+            </div>
+          </div>
+          <!--................................-->
+          <div>
+            <label>Number of People</label>
+            <div>
+              <input class="input" type="" value="" />
+              <img class="person-icon" src="./image/person-icon.png" alt="" />
+            </div>
+          </div>
+          <!--................................-->
+        </div>
+        <!--................................-->
+        <div class="display-card">
+          <div class="tip-amount">
+            <div>
+              <p style="font-weight: bold; color: white">Tip Amount</p>
+              <p style="color: var(--light-gray)">/person</p>
+            </div>
+            <div class="tip-value">$ 0.00</div>
+          </div>
+          <div class="tip-per-person">
+            <div>
+              <p style="font-weight: bold; color: white">Total</p>
+              <p style="color: var(--light-gray)">/person</p>
+            </div>
+            <div class="tip-value">$ 0.00</div>
+          </div>
+          <button class="button">CALCULATE</button>
+        </div>
+        <!--................................-->
+      </div>
+    </main>
   </body>
 </html>
