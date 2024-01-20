@@ -75,7 +75,7 @@ body {
 
 .calculator-bg {
   background-color: white;
-  border-radius: 2rem;
+  border-radius: 2rem 2rem 0 0;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
@@ -248,5 +248,11 @@ button {
 
   .tip {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .calculator-bg {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
   }
 }
