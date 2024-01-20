@@ -245,4 +245,8 @@ button {
     margin-bottom: -10rem;
     font-size: xx-large;
   }
+
+  .tip {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
