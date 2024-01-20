@@ -188,7 +188,7 @@ button {
 .tip-value {
   font-weight: 500;
   font-size: xx-large;
-  color: white;
+  color: hsl(35, 80%, 50%);
 }
 
 .tip-amount p {
