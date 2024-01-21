@@ -162,6 +162,7 @@ label {
   border-radius: 0.3rem;
   text-align: center;
   padding: 0.5em 1em;
+  cursor: pointer;
 }
 
 .tip-amount {
@@ -176,16 +177,38 @@ label {
   margin: 2rem 0;
 }
 
-button {
+.button {
+  display: grid;
+  gap: 0.5em;
+}
+
+.btn-calculate {
   background-color: var(--vivid);
   color: white;
   border-radius: 0.5rem;
   padding: 0.5rem 4rem;
   border: none;
   width: 100%;
+  cursor: pointer;
 }
 
-.tip-value {
+.btn-reset {
+  background-color: var(--light-gray);
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.5rem 4rem;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.tip-amount-value {
+  font-weight: 500;
+  font-size: xx-large;
+  color: white;
+}
+
+.tip-total-per-person {
   font-weight: 500;
   font-size: xx-large;
   color: white;
@@ -235,8 +258,17 @@ button {
     padding: 1em 0;
   }
 
-  button {
+  .btn-calculate {
     align-self: flex-end;
+  }
+
+  .btn-reset {
+    align-self: flex-end;
+  }
+
+  .button {
+    display: flex;
+    gap: 2em;
   }
 
   h1 {

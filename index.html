@@ -18,7 +18,7 @@
           <div>
             <label class="bill">Bill</label>
             <div>
-              <input class="input" type="" value="" />
+              <input class="input bill-input" type="text" value="" />
               <img class="dollar-icon" src="./image/dollar-icon.svg" alt="" />
             </div>
           </div>
@@ -36,11 +36,11 @@
           <div class="tip-card">
             <p>Select Tip %</p>
             <div class="tip">
-              <div class="tip-percentage">5%</div>
-              <div class="tip-percentage">10%</div>
-              <div class="tip-percentage">15%</div>
-              <div class="tip-percentage">25%</div>
-              <div class="tip-percentage">50%</div>
+              <div class="tip-percentage" data-percentage="5">5%</div>
+              <div class="tip-percentage" data-percentage="10">10%</div>
+              <div class="tip-percentage" data-percentage="15">15%</div>
+              <div class="tip-percentage" data-percentage="25">25%</div>
+              <div class="tip-percentage" data-percentage="50">50%</div>
               <div>
                 <input class="tip-custom" type="text" placeholder="Custom" />
               </div>
@@ -50,7 +50,7 @@
           <div>
             <label>Number of People</label>
             <div>
-              <input class="input" type="" value="" />
+              <input class="input number-of-people" type="text" value="" />
               <img class="person-icon" src="./image/person-icon.svg" alt="" />
             </div>
           </div>
@@ -63,19 +63,23 @@
               <p style="font-weight: bold; color: white">Tip Amount</p>
               <p style="color: var(--light-gray)">/person</p>
             </div>
-            <div class="tip-value">$ 0.00</div>
+            <div class="tip-amount-value">$ 0.00</div>
           </div>
           <div class="tip-per-person">
             <div>
               <p style="font-weight: bold; color: white">Total</p>
               <p style="color: var(--light-gray)">/person</p>
             </div>
-            <div class="tip-value">$ 0.00</div>
+            <div class="tip-total-per-person">$ 0.00</div>
           </div>
-          <button class="button">CALCULATE</button>
+          <div class="button">
+            <button class="btn-calculate">CALCULATE</button>
+            <button class="btn-reset">RESET</button>
+          </div>
         </div>
         <!--................................-->
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
