@@ -123,16 +123,6 @@ input[type="text"]:focus {
   top: -2.2rem;
 }
 
-/*
-.container {
-  --max-width: 1110px;
-  --padding: 1rem;
-  width: min(var(--max-width), 100% - (var(--padding))); 
-  margin-inline: auto;
-}
-
-*/
-
 .display-card {
   background-color: var(--dark-liver);
   border-radius: 1rem;
@@ -160,6 +150,10 @@ label {
   padding: 0.5em 1em;
 }
 
+.select-tip-custom {
+  padding: 0;
+}
+
 .tip {
   display: grid;
   text-align: center;
@@ -183,10 +177,6 @@ label {
   text-align: center;
   padding: 0.5em 1em;
   cursor: pointer;
-}
-
-.select-tip-custom {
-  padding: 0;
 }
 
 .tip-amount {
@@ -245,6 +235,8 @@ label {
 .tip-per-person p {
   text-align: start;
 }
+
+/*............MEDIA QUERY ...............*/
 
 @media (min-width: 60em) {
   .calculator-bg {
