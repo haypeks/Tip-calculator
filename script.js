@@ -51,7 +51,7 @@ btnCalculate.addEventListener("click", () => {
 
 //RESET BUTTON
 btnReset.addEventListener("click", () => {
-  billInput.value = "";
+  billInput.value = "0";
   tipCustom.value = "";
   numberOfPeople.value = "1";
   tipAmountValue.innerHTML = "$0.00";

@@ -3,6 +3,7 @@
 :root {
   --vivid: hsl(35, 100%, 50%);
   --dark-liver: hsl(0, 0%, 31%);
+  --light-liver: hsl(0, 1%, 71%);
   --light-gray: hsl(60, 2%, 83%);
   --very-light-gray: hsl(60, 6%, 95%);
 }
@@ -86,8 +87,13 @@ h1 {
   margin: 3rem;
 }
 
+input[type="text"] {
+  color: var(--light-liver);
+}
+
 input[type="text"]:focus {
   border: 1px solid var(--vivid);
+  color: black;
 }
 
 .input {
@@ -103,7 +109,7 @@ input[type="text"]:focus {
 
 .dollar-icon {
   height: 25px;
-  width: 25px;
+  width: 20px;
   position: relative;
   top: -2.3rem;
   left: 1rem;
