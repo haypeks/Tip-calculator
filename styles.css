@@ -87,7 +87,7 @@ h1 {
 }
 
 input[type="text"]:focus {
-  border: 3px solid var(--vivid);
+  border: 1px solid var(--vivid);
 }
 
 .input {
