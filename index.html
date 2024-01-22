@@ -16,16 +16,16 @@
         <div class="input-column">
           <!--................................-->
           <div>
-            <label class="bill">Bill</label>
+            <label for="bill-input" class="bill">Bill</label>
             <div>
-              <input class="input bill-input" type="text" value="" />
+              <input id="bill-input" class="input" type="text" value="" />
               <img class="dollar-icon" src="./image/dollar-icon.svg" alt="" />
             </div>
           </div>
           <!--................................-->
           <div>
-            <label>How was your service?</label>
-            <select>
+            <labe for="select-tip">How was your service?</labe>
+            <select id="select-tip">
               <option value="">Choose an Option</option>
               <option value="excellent">Excellent</option>
               <option value="good">Good</option>
@@ -36,21 +36,34 @@
           <div class="tip-card">
             <p>Select Tip %</p>
             <div class="tip">
-              <div class="tip-percentage" data-percentage="5">5%</div>
-              <div class="tip-percentage" data-percentage="10">10%</div>
-              <div class="tip-percentage" data-percentage="15">15%</div>
-              <div class="tip-percentage" data-percentage="25">25%</div>
-              <div class="tip-percentage" data-percentage="50">50%</div>
-              <div>
+              <div class="tip-percentage tip-style" data-percentage="5">5%</div>
+              <div class="tip-percentage tip-style" data-percentage="10">
+                10%
+              </div>
+              <div class="tip-percentage tip-style" data-percentage="15">
+                15%
+              </div>
+              <div class="tip-percentage tip-style" data-percentage="25">
+                25%
+              </div>
+              <div class="tip-percentage tip-style" data-percentage="50">
+                50%
+              </div>
+              <div class="tip-percentage select-tip-custom">
                 <input class="tip-custom" type="text" placeholder="Custom" />
               </div>
             </div>
           </div>
           <!--................................-->
           <div>
-            <label>Number of People</label>
+            <label for="number-of-people-input">Number of People</label>
             <div>
-              <input class="input number-of-people" type="text" value="" />
+              <input
+                id="number-of-people-input"
+                class="input"
+                type="text"
+                value=""
+              />
               <img class="person-icon" src="./image/person-icon.svg" alt="" />
             </div>
           </div>
@@ -70,7 +83,7 @@
               <p style="font-weight: bold; color: white">Total</p>
               <p style="color: var(--light-gray)">/person</p>
             </div>
-            <div class="tip-total-per-person">$ 0.00</div>
+            <div class="total-amount-per-person">$ 0.00</div>
           </div>
           <div class="button">
             <button class="btn-calculate">CALCULATE</button>
