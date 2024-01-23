@@ -1,4 +1,4 @@
-# Tip Calculator App
+# Tip Calculator 
 
 This is a simple tip calculator designed to help users quickly calculate tips based on their bill amount and chosen tip percentage. The calculator provides a straightforward interface for ease of use. 
 
